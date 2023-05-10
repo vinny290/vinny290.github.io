@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>GCalc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calc_panel">
+        <div id="calc-panel-math-line" class="calc_panel-math-line"></div>
+        <div id="calc-panel-result" class="calc_panel-result"></div>
+      </div>
+      <div id="calc-buttons" class="calc_buttons">
+        <div class="calc_button calc-long">C</div>
+        <div class="calc_button operator">%</div>
+        <div class="calc_button button-purple operator">/</div>
+        <div class="calc_button number">7</div>
+        <div class="calc_button number">8</div>
+        <div class="calc_button number">9</div>
+        <div class="calc_button button-purple operator">*</div>
+        <div class="calc_button number">4</div>
+        <div class="calc_button number">5</div>
+        <div class="calc_button number">6</div>
+        <div class="calc_button button-purple operator">-</div>
+        <div class="calc_button number">1</div>
+        <div class="calc_button number">2</div>
+        <div class="calc_button number">3</div>
+        <div class="calc_button button-purple operator">+</div>
+        <div class="calc_button calc-long number">0</div>
+        <div class="calc_button">.</div>
+        <div class="calc_button button-orange">=</div>
+      
+      </div>
+        
+      
+      
+      
+    </div>
+    
+  </body>
+</html>
