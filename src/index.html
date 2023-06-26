@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/bootstrap.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>tester</title>
+</head>
+<body>
+    <div class="sectionHead">
+        <div class="left">
+            <h1>ROBO.SCHOOL</h1>
+        </div>
+        <div class="right">
+            <h1>+7 800 000 11 22</h1>
+        </div>
+
+        <div class="container">
+            <div class="href">
+                <div class="text-center">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#">О школе</a>
+                          </div>
+                          <div class="col">
+                            <a href="#">Тренеры</a>
+                          </div>
+                          <div class="col">
+                            <a href="#">Стоимость</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            
+                  
+
+            <div class="row">
+                <div class="people">
+                    <img src="/src/img/sec1-bg-people.png" alt="people">
+                </div>
+                <div class="col-lg-6">
+                    <div class="nazv">
+                        <h1>ROBO SCHOOL</h1>
+                    </div>
+                    <div class="podzg">
+                        <p>Курсы повышения квалификации по робототехнике <br> для педагогов начальной школы</p>
+                    </div>
+                    <div class="knopka">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="scrollToSection()">Записаться на курс</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="sectionInfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="info">
+                        <p><strong>Robo School</strong>– учреждение для формирования кадрового <br> педагогического резерва в сфере робототехники <br> и программирования</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap-number">
+                <div class="text-left">
+                    <div class="row align-items-left">
+                      <div class="col">
+                        <h1>10</h1>
+                        <p>УМК по различным <br> направлениям по робототехнике</p>
+                      </div>
+                      <div class="col">
+                        <h1>20</h1>
+                        <p>Школ, в которых запущена <br> робототехника</p>
+                      </div>
+                      <div class="col">
+                        <h1>100</h1>
+                        <p>Педагогов прошедших курсы <br> повышения квалификации</p>
+                      </div>
+                      <div class="col">
+                        <h1>10 000</h1>
+                        <p>Обученных детей на базе <br> собственных центров</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="sectionExpectation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="head">
+                        <h3>Что вы получите после курса</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="text-left">
+                    <div class="row align-items-left">
+                        <div class="col">
+                        <h5>Удостоверение</h5>
+                        <p>Дающее право преподавать робототехнику <br> для детей 6-12 лет в образовательных <br> учреждениях</p>
+                        </div>
+                        <div class="col">
+                        <h5>Знания</h5>
+                        <p>По основам разработки учебно-<br>методических комплексов<br>по робототехнике и программированию</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-custom-class="custom-tooltip"
+                                data-bs-title="При наличии свободных мест">
+                                <img src="/img/buttons/tooltip.png" alt="df">
+                            </button>
+                        <h5>Практику</h5>
+                        <p>Возможность пройти практику<br>по преподаванию робототехники на базе<br>R:ED LAB (в оффлайн или онлайн формате)</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="sectionTreners">
+        <div class="container">
+            <div class="head">
+                <h3>Профессиональные тренеры</h3>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="text-left">
+                        <div class="row">
+
+                          <div class="col">
+                            <div class="card">
+                                <img src="/src/img/people/1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ирина Лайм</h5>
+                                  <p class="card-text">преподаватель по робототехнике</p>
+                                  <div class="card-more">
+                                    <button data-bs-toggle="modal" data-bs-target="#trainersModal_IL">Подробнее</button>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                                <img src="/src/img/people/2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Марина Орлова</h5>
+                                  <p class="card-text">преподаватель по робототехнике</p>
+                                  <div class="card-more">
+                                    <button data-bs-toggle="modal" data-bs-target="#trainersModal_MO">Подробнее</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card">
+                                <img src="/src/img/people/3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Максим Петров</h5>
+                                  <p class="card-text">преподаватель по программированию</p>
+                                  <div class="card-more">
+                                    <button data-bs-toggle="modal" data-bs-target="#trainersModal_MP">Подробнее</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card">
+                                <img src="/src/img/people/4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Константин Назаров</h5>
+                                  <p class="card-text">преподаватель по робототехнике</p>
+                                  <div class="card-more">
+                                    <button data-bs-toggle="modal" data-bs-target="#trainersModal_KN">Подробнее</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container text-center">
+                        <div class="row">
+
+                          <div class="col">
+                            <div class="card">
+                                <img src="/src/img/people/5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Лиза Весенняя</h5>
+                                  <p class="card-text">преподаватель по программированию</p>
+                                  <div class="card-more">
+                                    <button data-bs-toggle="modal" data-bs-target="#trainersModal_LV">Подробнее</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card">
+                                <img src="/src/img/people/1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ирина Лайм</h5>
+                                  <p class="card-text">преподаватель по робототехнике</p>
+                                  <div class="card-more">
+                                    <button data-bs-toggle="modal" data-bs-target="#trainersModal_IL">Подробнее</button>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                                <img src="/src/img/people/2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Марина Орлова</h5>
+                                  <p class="card-text">преподаватель по робототехнике</p>
+                                  <div class="card-more">
+                                    <button data-bs-toggle="modal" data-bs-target="#trainersModal_MO">Подробнее</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card">
+                                <img src="/src/img/people/3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Максим Петров</h5>
+                                  <p class="card-text">преподаватель по программированию</p>
+                                  <div class="card-more">
+                                    <button data-bs-toggle="modal" data-bs-target="#trainersModal_MP">Подробнее</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+
+                        </div>
+                      </div>
+                  </div>
+        
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Следующий</span>
+                </button>
+              </div>
+        </div>
+    </div>
+    <div class="sectionPackage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="head">
+                        <h3>Выберите нужный пакет</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+        
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">— PRO —</h5>
+                        <p class="card-number">20.000 ₽</p>
+                        <p class="card-text">УМК по робототетхнике <br>и программированию</p>
+                        <div class="knopka">
+                          <button type="button" class="btn btn-primary btn-lg" onclick="scrollToSection()">Оставить заявку</button>
+                      </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">— ROBO —</h5>
+                        <p class="card-number">15.000 ₽</p>
+                        <p class="card-text">УМК по робототетхнике</p>
+                        <div class="knopka">
+                          <button type="button" class="btn btn-primary btn-lg" onclick="scrollToSection()">Оставить заявку</button>
+                      </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">— PROG —</h5>
+                        <p class="card-number">10.000 ₽</p>
+                        <p class="card-text">УМК по программированию</p>
+                        <div class="knopka">
+                          <button type="button" class="btn btn-primary btn-lg" onclick="scrollToSection()" >Оставить заявку</button>
+                      </div>
+                </div>
+                </div>
+        </div>
+    </div>
+    <div class="sectionSale">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1">
+                    <div class="head">
+                        <h3>Запишитесь на курс<br>со скидкой 10%</h3>
+                        <p>Акция действительна до 10 марта 2022 года</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-lg-offset-2">
+                    <div class="form">
+                        <form>
+                            <div class="mb-3">
+                              <input placeholder="Имя" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                              <input placeholder="Телефон" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <input placeholder="E-mail" class="form-control">
+                              </div>
+                            <div class="application-btn">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="button">Оформить заявку</button>
+                                </div>
+                            </div>
+                            
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sectionFooter">
+        <div class="left">
+            <h1>ROBO.SCHOOL</h1>
+            <p>© ROBO.SCHOOL</p>
+        </div>
+        <div class="right">
+            <h1>+7 800 000 11 22</h1>
+        </div>
+    </div>
+
+    <!-- модальные окна -->
+    <!-- тренер инфо -->
+<div class="marina">
+    <div class="modal fade" id="trainersModal_MO" tabindex="-1" aria-labelledby="trainersModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="cards">
+                        <div class="avatar">
+                            <img src="/src/img/people/2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                            <div class="info">
+                                <div class="card-body">
+                                    <h5 class="card-title">Марина Орлова</h5>
+                                    <p class="card-text">преподаватель по робототехнике</p>
+                                    <div class="btn-flex">
+                                        <div class="fcb-btn">
+                                            <button></button>
+                                            </div>
+                                            <div class="inst-btn">
+                                            <button></button>
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close">Закрыть</button>
+                </div>
+                <div class="modal-body">
+                    <a href="#" class="link" id="link1">Образование</a>
+                    <a href="#" class="link" id="link2">Опыт работы</a>
+                    <a href="#" class="link" id="link3">Награды</a>
+
+                    
+                </div>
+                
+                <div class="modal-footer">
+                    <div class="description">
+                        <div id="описание1" class="txt" style="display: none;">
+                            <p>Сентябрь 1995 — Июнь 2000<br>
+                                Санкт-Петербургский политехнический университет Петра Великого<br>
+                                Факультет: Компьютерных наук и технологий<br>
+                                Специальность: Математика и компьютерные науки<br>
+                                Форма обучения: Очная<br>
+                            </p>
+                            <p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                
+                            </p>
+                        
+                        </div>
+                        <div id="описание2" style="display: none;">
+                            <div class="txt">
+                                <p><strong>Период:</strong>
+                                    Сентябрь 2015 – апрель 2018 года (2 года 7 месяцев)
+                                </p>
+                                <p><strong>Организация:</strong>
+                                    «ФизПривет», Москва.
+                                </p>
+                                <p><strong>Должность:</strong>
+                                    Персональный тренер фитнес клуба.
+                                </p>
+                                <p><strong>Обязанности:</strong>
+                                    — занимался привлечением новых и развитием старых клиентов фитнес клуба;
+                                    — вышел на первое место по продажам персональных тренировок среди тренеров;
+                                    — работал с возражениями и конфликтными ситуациями;
+                                    — прошел курс «продажи в фитнесе»;
+                                    — был повышен до старшего тренера через 6 месяцев.
+                                </p>
+                                <p><strong>Достижения:</strong>
+                                    
+                                    Как старший тренер, выстроил систему подготовки<br>тренерского состава и повысил удовлетворенность<br>клиентов на 23% (по результатам опроса среди<br>клиентов).
+                                </p>
+
+                            </div>
+                            
+                        </div>
+                        <div id="описание3" style="display: none;">
+                        <div class="txt">
+                            <p><strong>1.</strong> Почетная грамота Министерства образования и науки России за руководство лучшими студенческими работами. Апрель 2018 г., Минобрнауки РФ</p>
+                            <p><strong>2.</strong> Диплом победителя регионального этапа конкурса «Учитель года». Ноябрь 2020 г., Академия педагогических наук</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="maks">
+    <div class="modal fade" id="trainersModal_MP" tabindex="-1" aria-labelledby="trainersModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="cards">
+                        <div class="avatar">
+                            <img src="/src/img/people/3.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                            <div class="info">
+                                <div class="card-body">
+                                    <h5 class="card-title">Максим Петров</h5>
+                                    <p class="card-text">преподаватель по программированию</p>
+                                    <div class="btn-flex">
+                                        <div class="fcb-btn">
+                                            <button></button>
+                                            </div>
+                                            <div class="inst-btn">
+                                            <button></button>
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close">Закрыть</button>
+                </div>
+                <div class="modal-body">
+                    <a href="#" class="link" id="linkMP1">Образование</a>
+                    <a href="#" class="link" id="linkMP2">Опыт работы</a>
+                    <a href="#" class="link" id="linkMP3">Награды</a>
+
+                    
+                </div>
+                
+                <div class="modal-footer">
+                    <div class="description">
+                        <div id="описаниеMP1" class="txt" style="display: none;">
+                            <p>Сентябрь 1995 — Июнь 2000<br>
+                                Санкт-Петербургский политехнический университет Петра Великого<br>
+                                Факультет: Компьютерных наук и технологий<br>
+                                Специальность: Математика и компьютерные науки<br>
+                                Форма обучения: Очная<br>
+                            </p>
+                            <p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                
+                            </p>
+                        
+                        </div>
+                        <div id="описаниеMP2" style="display: none;">
+                            <div class="txt">
+                                <p><strong>Период:</strong>
+                                    Сентябрь 2015 – апрель 2018 года (2 года 7 месяцев)
+                                </p>
+                                <p><strong>Организация:</strong>
+                                    «ФизПривет», Москва.
+                                </p>
+                                <p><strong>Должность:</strong>
+                                    Персональный тренер фитнес клуба.
+                                </p>
+                                <p><strong>Обязанности:</strong>
+                                    — занимался привлечением новых и развитием старых клиентов фитнес клуба;
+                                    — вышел на первое место по продажам персональных тренировок среди тренеров;
+                                    — работал с возражениями и конфликтными ситуациями;
+                                    — прошел курс «продажи в фитнесе»;
+                                    — был повышен до старшего тренера через 6 месяцев.
+                                </p>
+                                <p><strong>Достижения:</strong>
+                                    
+                                    Как старший тренер, выстроил систему подготовки<br>тренерского состава и повысил удовлетворенность<br>клиентов на 23% (по результатам опроса среди<br>клиентов).
+                                </p>
+
+                            </div>
+                            
+                        </div>
+                        <div id="описаниеMP3" style="display: none;">
+                        <div class="txt">
+                            <p><strong>1.</strong> Почетная грамота Министерства образования и науки России за руководство лучшими студенческими работами. Апрель 2018 г., Минобрнауки РФ</p>
+                            <p><strong>2.</strong> Диплом победителя регионального этапа конкурса «Учитель года». Ноябрь 2020 г., Академия педагогических наук</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="konstantin">
+    <div class="modal fade" id="trainersModal_KN" tabindex="-1" aria-labelledby="trainersModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="cards">
+                        <div class="avatar">
+                            <img src="/src/img/people/4.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                            <div class="info">
+                                <div class="card-body">
+                                    <h5 class="card-title">Константин Назаров</h5>
+                                    <p class="card-text">преподаватель по робототехнике</p>
+                                    <div class="btn-flex">
+                                        <div class="fcb-btn">
+                                            <button></button>
+                                            </div>
+                                            <div class="inst-btn">
+                                            <button></button>
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close">Закрыть</button>
+                </div>
+                <div class="modal-body">
+                    <a href="#" class="link" id="linkKN1">Образование</a>
+                    <a href="#" class="link" id="linkKN2">Опыт работы</a>
+                    <a href="#" class="link" id="linkKN3">Награды</a>
+
+                    
+                </div>
+                
+                <div class="modal-footer">
+                    <div class="description">
+                        <div id="описаниеKN1" class="txt" style="display: none;">
+                            <p>Сентябрь 1995 — Июнь 2000<br>
+                                Санкт-Петербургский политехнический университет Петра Великого<br>
+                                Факультет: Компьютерных наук и технологий<br>
+                                Специальность: Математика и компьютерные науки<br>
+                                Форма обучения: Очная<br>
+                            </p>
+                            <p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                
+                            </p>
+                        
+                        </div>
+                        <div id="описаниеKN2" style="display: none;">
+                            <div class="txt">
+                                <p><strong>Период:</strong>
+                                    Сентябрь 2015 – апрель 2018 года (2 года 7 месяцев)
+                                </p>
+                                <p><strong>Организация:</strong>
+                                    «ФизПривет», Москва.
+                                </p>
+                                <p><strong>Должность:</strong>
+                                    Персональный тренер фитнес клуба.
+                                </p>
+                                <p><strong>Обязанности:</strong>
+                                    — занимался привлечением новых и развитием старых клиентов фитнес клуба;
+                                    — вышел на первое место по продажам персональных тренировок среди тренеров;
+                                    — работал с возражениями и конфликтными ситуациями;
+                                    — прошел курс «продажи в фитнесе»;
+                                    — был повышен до старшего тренера через 6 месяцев.
+                                </p>
+                                <p><strong>Достижения:</strong>
+                                    
+                                    Как старший тренер, выстроил систему подготовки<br>тренерского состава и повысил удовлетворенность<br>клиентов на 23% (по результатам опроса среди<br>клиентов).
+                                </p>
+
+                            </div>
+                            
+                        </div>
+                        <div id="описаниеKN3" style="display: none;">
+                        <div class="txt">
+                            <p><strong>1.</strong> Почетная грамота Министерства образования и науки России за руководство лучшими студенческими работами. Апрель 2018 г., Минобрнауки РФ</p>
+                            <p><strong>2.</strong> Диплом победителя регионального этапа конкурса «Учитель года». Ноябрь 2020 г., Академия педагогических наук</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="liza">
+    <div class="modal fade" id="trainersModal_LV" tabindex="-1" aria-labelledby="trainersModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="cards">
+                        <div class="avatar">
+                            <img src="/src/img/people/5.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                            <div class="info">
+                                <div class="card-body">
+                                    <h5 class="card-title">Лиза Весенняя</h5>
+                                    <p class="card-text">преподаватель по программированию</p>
+                                    <div class="btn-flex">
+                                        <div class="fcb-btn">
+                                            <button></button>
+                                            </div>
+                                            <div class="inst-btn">
+                                            <button></button>
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close">Закрыть</button>
+                </div>
+                <div class="modal-body">
+                    <a href="#" class="link" id="linkLV1">Образование</a>
+                    <a href="#" class="link" id="linkLV2">Опыт работы</a>
+                    <a href="#" class="link" id="linkLV3">Награды</a>
+
+                    
+                </div>
+                
+                <div class="modal-footer">
+                    <div class="description">
+                        <div id="описаниеLV1" class="txt" style="display: none;">
+                            <p><strong>Образование Лизы Весенней</strong><br>
+                                Сентябрь 1995 — Июнь 2000<br>
+                                Санкт-Петербургский политехнический университет Петра Великого<br>
+                                Факультет: Компьютерных наук и технологий<br>
+                                Специальность: Математика и компьютерные науки<br>
+                                Форма обучения: Очная<br>
+                            </p>
+                            <p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                
+                            </p>
+                        
+                        </div>
+                        <div id="описаниеLV2" style="display: none;">
+                            <div class="txt">
+                                <p><strong>ОПЫТ РАБОТЫ Лизы Весенней<br>Период:</strong>
+                                    Сентябрь 2015 – апрель 2018 года (2 года 7 месяцев)
+                                </p>
+                                <p><strong>Организация:</strong>
+                                    «ФизПривет», Москва.
+                                </p>
+                                <p><strong>Должность:</strong>
+                                    Персональный тренер фитнес клуба.
+                                </p>
+                                <p><strong>Обязанности:</strong>
+                                    — занимался привлечением новых и развитием старых клиентов фитнес клуба;
+                                    — вышел на первое место по продажам персональных тренировок среди тренеров;
+                                    — работал с возражениями и конфликтными ситуациями;
+                                    — прошел курс «продажи в фитнесе»;
+                                    — был повышен до старшего тренера через 6 месяцев.
+                                </p>
+                                <p><strong>Достижения:</strong>
+                                    
+                                    Как старший тренер, выстроил систему подготовки<br>тренерского состава и повысил удовлетворенность<br>клиентов на 23% (по результатам опроса среди<br>клиентов).
+                                </p>
+
+                            </div>
+                            
+                        </div>
+                        <div id="описаниеLV3" style="display: none;">
+                        <div class="txt">
+                            <p><strong>НАГРАДЫ Лизы Весенней</strong></p>
+                            <p><strong>1.</strong> Почетная грамота Министерства образования и науки России за руководство лучшими студенческими работами. Апрель 2018 г., Минобрнауки РФ</p>
+                            <p><strong>2.</strong> Диплом победителя регионального этапа конкурса «Учитель года». Ноябрь 2020 г., Академия педагогических наук</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="irina">
+    <div class="modal fade" id="trainersModal_IL" tabindex="-1" aria-labelledby="trainersModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="cards">
+                        <div class="avatar">
+                            <img src="/src/img/people/1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                            <div class="info">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ирина Лайм</h5>
+                                    <p class="card-text">преподаватель по робототехнике</p>
+                                    <div class="btn-flex">
+                                        <div class="fcb-btn">
+                                            <button></button>
+                                            </div>
+                                            <div class="inst-btn">
+                                            <button></button>
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close">Закрыть</button>
+                </div>
+                <div class="modal-body">
+                    <a href="#" class="link" id="linkIL1">Образование</a>
+                    <a href="#" class="link" id="linkIL2">Опыт работы</a>
+                    <a href="#" class="link" id="linkIL3">Награды</a>
+
+                    
+                </div>
+                
+                <div class="modal-footer">
+                    <div class="description">
+                        <div id="описаниеIL1" class="txt" style="display: none;">
+                            <p><strong>Образование ИРИНЫ ЛАЙМ</strong><br>
+                                Сентябрь 1995 — Июнь 2000<br>
+                                Санкт-Петербургский политехнический университет Петра Великого<br>
+                                Факультет: Компьютерных наук и технологий<br>
+                                Специальность: Математика и компьютерные науки<br>
+                                Форма обучения: Очная<br>
+                            </p>
+                            <p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                <h1>Курсы и тренинги</h1>
+                                <p>Ноябрь 2020 — Февраль 2021<br>
+                                    Программа дополнительного образования «3D Моделирование»
+                                    Место проведения: Институт дополнительного образования «Политех»
+                                </p>
+                                
+                            </p>
+                        
+                        </div>
+                        <div id="описаниеIL2" style="display: none;">
+                            <div class="txt">
+                                <p><strong>ОПЫТ РАБОТЫ ИРИНЫ ЛАЙМ<br>Период:</strong>
+                                    Сентябрь 2015 – апрель 2018 года (2 года 7 месяцев)
+                                </p>
+                                <p><strong>Организация:</strong>
+                                    «ФизПривет», Москва.
+                                </p>
+                                <p><strong>Должность:</strong>
+                                    Персональный тренер фитнес клуба.
+                                </p>
+                                <p><strong>Обязанности:</strong>
+                                    — занимался привлечением новых и развитием старых клиентов фитнес клуба;
+                                    — вышел на первое место по продажам персональных тренировок среди тренеров;
+                                    — работал с возражениями и конфликтными ситуациями;
+                                    — прошел курс «продажи в фитнесе»;
+                                    — был повышен до старшего тренера через 6 месяцев.
+                                </p>
+                                <p><strong>Достижения:</strong>
+                                    
+                                    Как старший тренер, выстроил систему подготовки<br>тренерского состава и повысил удовлетворенность<br>клиентов на 23% (по результатам опроса среди<br>клиентов).
+                                </p>
+
+                            </div>
+                            
+                        </div>
+                        <div id="описаниеIL3" style="display: none;">
+                        <div class="txt">
+                            <p><strong>НАГРАДЫ ИРИНЫ ЛАЙМ</strong></p>
+                            <p><strong>1.</strong> Почетная грамота Министерства образования и науки России за руководство лучшими студенческими работами. Апрель 2018 г., Минобрнауки РФ</p>
+                            <p><strong>2.</strong> Диплом победителя регионального этапа конкурса «Учитель года». Ноябрь 2020 г., Академия педагогических наук</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="/src/js/main.js"></script>
+</body>
+</html>
