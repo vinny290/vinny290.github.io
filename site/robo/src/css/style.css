@@ -1,0 +1,604 @@
+@font-face {
+  font-family: 'Jost-reg';
+  src: url('Jost-Regular.eot');
+  src: url('Jost-Regular.eot?#iefix') format('embedded-opentype'), url('Jost-Regular.woff2') format('woff2'), url('Jost-Regular.woff') format('woff'), url('Jost-Regular.ttf') format('truetype'), url('Jost-Regular.svg#Jost-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jost-bold';
+  src: url('Jost-SemiBold.eot');
+  src: url('Jost-SemiBold.eot?#iefix') format('embedded-opentype'), url('Jost-SemiBold.woff2') format('woff2'), url('Jost-SemiBold.woff') format('woff'), url('Jost-SemiBold.ttf') format('truetype'), url('Jost-SemiBold.svg#Jost-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/* Для WebKit-браузеров (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 10px;
+  /* Ширина ползунка */
+}
+::-webkit-scrollbar-track {
+  background-color: #9b9b9b;
+  /* Цвет фона трека (невидимой части ползунка) */
+  border-radius: 40px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(20, 16, 36, 0.42);
+  /* Цвет ползунка */
+  border-radius: 40px;
+  /* Закругление углов ползунка */
+}
+/* Общие стили для всех браузеров */
+/* Опциональное добавление тени к ползунку */
+body::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.31);
+}
+/* Добавление цветовых стилей при наведении на ползунок */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(20, 16, 36, 0.861);
+}
+.sectionHead {
+  height: 1080px;
+  width: 1920px;
+  background: url(/src/img/sec1-bg.png);
+}
+.sectionHead .left {
+  display: absolute;
+  padding-top: 30px;
+  padding-left: 100px;
+  width: 228px;
+  height: 48px;
+}
+.sectionHead .left h1 {
+  color: #fff;
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 160%;
+}
+.sectionHead .left p {
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.7);
+}
+.sectionHead .right {
+  margin-top: -54px;
+  margin-right: 100px;
+}
+.sectionHead .right h1 {
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 160%;
+  color: #fff;
+  text-align: right;
+}
+.sectionHead .href {
+  position: relative;
+  width: 320px;
+  left: 469px;
+  top: -46px;
+}
+.sectionHead .href a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+}
+.people {
+  position: absolute;
+  left: 821px;
+  top: 160px;
+  width: 809px;
+}
+.people img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.nazv h1 {
+  color: aliceblue;
+  margin-top: 344px;
+  font-size: 70px;
+  line-height: 160%;
+}
+.podzg {
+  margin-top: 20px;
+}
+.podzg p {
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 160%;
+}
+.knopka {
+  margin-top: 50px;
+}
+.knopka .btn {
+  background: #D52027;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  padding: 25px 54px;
+  gap: 10px;
+  font-size: 18px;
+}
+.sectionInfo .info {
+  margin-top: 120px;
+}
+.sectionInfo .info p {
+  font-size: 30px;
+  line-height: 160%;
+  color: #141024;
+}
+.sectionInfo .wrap-number {
+  margin-top: 60px;
+}
+.sectionInfo .wrap-number .col h1 {
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  color: #D52027;
+  font-size: 70px;
+  line-height: 160%;
+}
+.sectionInfo .wrap-number .col p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: rgba(20, 16, 36, 0.7);
+}
+.sectionExpectation {
+  height: 485px;
+  background: #F9F9F9;
+}
+.sectionExpectation .head h3 {
+  font-family: 'Jost-bold', sans-serif;
+  padding-top: 100px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 160%;
+  color: #141024;
+}
+.sectionExpectation .columns {
+  margin-top: 60px;
+}
+.sectionExpectation .columns h5 {
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  color: #141024;
+}
+.sectionExpectation .columns p {
+  margin-top: 20px;
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: rgba(20, 16, 36, 0.7);
+}
+.sectionExpectation .columns button {
+  position: relative;
+  left: 115px;
+  top: 20px;
+  border: none;
+  background-color: #fff;
+  padding: 0;
+}
+.sectionExpectation .columns button img {
+  width: 24px;
+  height: 24px;
+}
+.sectionExpectation .columns button .data-bs-title {
+  background-color: #fff;
+}
+.sectionTreners {
+  margin-top: 120px;
+}
+.sectionTreners .carousel-control-prev {
+  left: -45px;
+  top: 275px;
+  width: 33px;
+  height: 60px;
+}
+.sectionTreners .carousel-control-prev-icon {
+  position: relative;
+  background-image: url(/src/img/arrow/Arrow\ -\ Right\ Circle-1.svg);
+}
+.sectionTreners .carousel-control-next {
+  right: -45px;
+  top: 275px;
+  width: 33px;
+  height: 60px;
+}
+.sectionTreners .carousel-control-next-icon {
+  position: relative;
+  background-image: url(/src/img/arrow/Arrow\ -\ Right\ Circle.svg);
+}
+.sectionTreners .head h3 {
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 160%;
+  color: #141024;
+}
+.sectionTreners .card {
+  margin-top: 60px;
+  height: 620px;
+  width: 300px;
+  border: none;
+}
+.sectionTreners .card-body {
+  padding: 0;
+}
+.sectionTreners .card img {
+  height: 426px;
+  width: 299px;
+  border-radius: 20px;
+}
+.sectionTreners .card-title {
+  font-family: 'Jost-bold', sans-serif;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  color: #141024;
+}
+.sectionTreners .card-text {
+  font-family: 'Jost-reg', sans-serif;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: rgba(20, 16, 36, 0.7);
+}
+.sectionTreners .card-more {
+  margin-top: 20px;
+}
+.sectionTreners .card-more button {
+  border: none;
+  padding-left: 0;
+  background-color: #fff;
+  color: #D52027;
+  font-size: 16px;
+}
+.sectionPackage .head h3 {
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 160%;
+  color: #141024;
+}
+.sectionPackage .cards {
+  display: flex;
+}
+.sectionPackage .card {
+  width: 360px;
+  height: 460px;
+  margin-right: 60px;
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  border-radius: 20px;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+.sectionPackage .card-title {
+  margin-top: 40px;
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #141024;
+}
+.sectionPackage .card-number {
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #141024;
+  margin-top: 60px;
+}
+.sectionPackage .card-text {
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #141024;
+  margin-top: 10px;
+}
+.sectionPackage .card:hover:not(.selected) {
+  transform: scale(1.08);
+}
+.sectionPackage .card.selected {
+  border: none;
+  width: 360px;
+  height: 500px;
+}
+.sectionPackage .card.selected .card-title {
+  color: #fff;
+  padding-top: 40px;
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 160%;
+}
+.sectionPackage .card.selected .card-number {
+  color: #fff;
+  margin-top: 30px;
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 160%;
+}
+.sectionPackage .card.selected .card-text {
+  color: #fff;
+  padding-top: 10px;
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+}
+.sectionPackage .card.selected .card-body {
+  background: #141024;
+  border-radius: 20px;
+}
+.sectionSale {
+  background: url(/src/img/sale-bg/sale-bg.png);
+  margin-top: 120px;
+  height: 460px;
+}
+.sectionSale .head {
+  margin-top: 106px;
+  width: 476px;
+}
+.sectionSale .head h3 {
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+  color: #fff;
+}
+.sectionSale .head p {
+  margin-top: 20px;
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+}
+.sectionSale .form {
+  margin-top: 87px;
+  width: 500;
+}
+.sectionSale .form form {
+  border-radius: 5px;
+}
+.sectionSale .form form input {
+  height: 64px;
+  margin-bottom: 10px;
+  border-style: none;
+}
+.sectionSale .form form .application-btn button {
+  background: #141024;
+  border: none;
+  border-radius: 5px;
+  height: 64px;
+  width: 500;
+  font-weight: 400;
+  font-family: 'Jost-reg', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+.sectionFooter {
+  height: 159px;
+  background-color: #141024;
+}
+.sectionFooter .left {
+  display: absolute;
+  padding-top: 40px;
+  padding-left: 100px;
+}
+.sectionFooter .left h1 {
+  color: #fff;
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 160%;
+}
+.sectionFooter .left p {
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.7);
+}
+.sectionFooter .right {
+  margin-top: -94px;
+  margin-right: 100px;
+}
+.sectionFooter .right h1 {
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 160%;
+  color: #fff;
+  text-align: right;
+}
+.modal-dialog {
+  max-width: var(--bs-modal-width) none;
+  width: 940px;
+  max-height: 768px;
+  border-radius: 20px;
+  padding-left: 40px;
+}
+.modal-header {
+  border: none;
+  margin-bottom: 20px;
+}
+.modal-header .btn-close {
+  --bs-btn-close-bg: none;
+  --bs-btn-close-focus-shadow: none;
+  --bs-btn-close-focus-opacity: none;
+  --bs-btn-close-disabled-opacity: none;
+  --bs-btn-close-white-filter: none;
+  padding: 0;
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-right: 80px;
+  position: relative;
+  bottom: 80px;
+}
+.modal-header .cards {
+  margin-top: 40px;
+  margin-left: 40px;
+  border: none;
+  width: 500px;
+  height: 175px;
+  display: inline-flex;
+  flex-direction: row;
+  text-align: left;
+}
+.modal-header .cards-body {
+  padding: 0;
+}
+.modal-header .cards .avatar {
+  width: 160px;
+}
+.modal-header .cards .info {
+  width: 350px;
+  margin-left: 40px;
+  top: 5px;
+}
+.modal-header .cards .info .card-title {
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.modal-header .cards .info .card-text {
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.modal-header .btn-flex {
+  display: flex;
+  flex-direction: row;
+}
+.modal-header .btn-flex .fcb-btn {
+  margin-right: 10px;
+}
+.modal-header .btn-flex .fcb-btn button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-image: url(/src/img/buttons/Facebook.svg);
+}
+.modal-header .btn-flex .inst-btn button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-image: url(/src/img/buttons/Instagram.svg);
+}
+.modal-body {
+  border: none;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.modal-body .link {
+  color: #141024;
+}
+.modal-body .link.active {
+  color: #D52027;
+}
+.modal-body a {
+  display: block;
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  margin-right: 180px;
+  text-decoration: none;
+  color: #141024;
+}
+.modal-body #описание1,
+.modal-body #описание2,
+.modal-body #описание3 {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.modal-body #описаниеMP1,
+.modal-body #описаниеMP2,
+.modal-body #описаниеMP3 {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.modal-footer {
+  padding-left: 40px;
+  overflow-y: auto;
+  /* Для WebKit-браузеров (Chrome, Safari) */
+  /* Для Firefox */
+  /* Цвет фона трека (невидимой части ползунка) */
+  scrollbar-track-color: #f1f1f1;
+  /* Цвет ползунка */
+  scrollbar-color: rgba(20, 16, 36, 0.08);
+  scrollbar-width: thin;
+  /* Толщина ползунка */
+  /* Общие стили для всех браузеров */
+  /* Опциональное добавление тени к ползунку */
+  /* Добавление цветовых стилей при наведении на ползунок */
+}
+.modal-footer ::-webkit-scrollbar {
+  width: 6px;
+  /* Ширина ползунка */
+}
+.modal-footer ::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  /* Цвет фона трека (невидимой части ползунка) */
+  border-radius: 40px;
+}
+.modal-footer ::-webkit-scrollbar-thumb {
+  background: rgba(20, 16, 36, 0.42);
+  /* Цвет ползунка */
+  border-radius: 40px;
+  /* Закругление углов ползунка */
+}
+.modal-footer ::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.31);
+}
+.modal-footer ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(20, 16, 36, 0.861);
+}
+.modal-footer .description {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.modal-footer .txt p {
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+}
+.modal-footer .txt h1 {
+  margin-top: 40px;
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+}
+@media (max-width: 320px) {
+  .sectionHead {
+    height: 617px;
+    width: 320px;
+    background-image: url(/src/img/320/bg/head-bg-320.png);
+  }
+}
