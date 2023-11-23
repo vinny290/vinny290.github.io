@@ -1,1490 +1,210 @@
-@font-face {
-  font-family: 'Sen-reg';
-  src: url('../font/Sen-Regular.eot');
-  src: url('../font/Sen-Regular.eot?#iefix') format('embedded-opentype'), url('../font/Sen-Regular.woff2') format('woff2'), url('../font/Sen-Regular.woff') format('woff'), url('../font/Sen-Regular.ttf') format('truetype'), url('../font/Sen-Regular.svg#Sen-Regular') format('svg');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Sen-bold';
-  src: url('../font/Sen-Bold.eot');
-  src: url('../font/Sen-Bold.eot?#iefix') format('embedded-opentype'), url('../font/Sen-Bold.woff2') format('woff2'), url('../font/Sen-Bold.woff') format('woff'), url('../font/Sen-Bold.ttf') format('truetype'), url('../font/Sen-Bold.svg#Sen-Bold') format('svg');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-.container-my {
-  max-width: 1440px;
+.container-mobile {
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid white;
 }
-html,
 body {
-  overflow-x: hidden;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  font-size: 10px;
-  /* Стили для фонового цвета слайдера */
-  /* Стили для ползунка слайдера */
+  background: #1c1c1c;
 }
-html ::-webkit-scrollbar,
-body ::-webkit-scrollbar {
-  width: 10px;
-  /* Ширина слайдера */
-  background-color: #181823;
-  /* Фоновый цвет слайдера (фиолетовый) */
+.header .navbar .logo img {
+  height: 50px;
+  width: 50px;
 }
-html ::-webkit-scrollbar-thumb,
-body ::-webkit-scrollbar-thumb {
-  background-color: #5221E6;
-  /* Цвет ползунка (серый) */
-  border-radius: 5rem;
+.header .navbar .menu img {
+  width: 37;
+  height: 16;
 }
-.section1 {
-  height: 8.8rem;
-  background: linear-gradient(to right, #000000 0%, #000000 33.33%, #181823 33.33%, #181823 66.66%);
+.header .text-header {
+  margin-top: 60px;
 }
-.section1 .container-my {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.section1 .container-my .navbar img {
-  display: block;
-  margin: 0 auto;
-}
-.section1 .container-my .dropdown button {
-  display: none;
-}
-.section1 .container-my .dropdown .choise {
-  display: flex;
-  align-items: center;
-}
-.section1 .container-my .dropdown .choise button {
-  display: none;
-}
-.section1 .container-my .dropdown .choise a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3.2rem 2.4rem;
-  font-size: 1.6rem;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-  color: #fff;
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
-}
-.section1 .choise a:hover {
-  background-color: #5221e64b;
-}
-.section1 .choise a.active {
-  background-color: #5221E6;
+.header .text-header h1 {
   color: #fff;
 }
 .section2 {
-  height: 81.4rem;
-  background: linear-gradient(to right, #000000 0%, #000000 33.33%, #181823 33.33%, #181823 66.66%);
+  margin-top: 60px;
 }
-.section2 .robin {
-  padding: 8rem 4rem 0 0;
-  height: 81.4rem;
+.section2 .text {
+  margin-bottom: 20px;
 }
-.section2 .robin .image {
-  position: relative;
-  height: 100%;
-}
-.section2 .robin .image .txt {
-  position: relative;
-  top: -51rem;
-  left: 62.9rem;
-  z-index: 2;
-}
-.section2 .robin .image .txt h1 {
-  width: 73.8rem;
-  color: #FFF;
-  font-size: 7.8rem;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: normal;
-}
-.section2 .robin .image .txt h1 span {
-  color: #FFFFFF80;
-}
-.section2 .robin .image .txt p {
-  width: 73.8rem;
-  margin-top: 3.2rem;
-  font-size: 1.8rem;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
+.section2 .text h1 {
   color: #fff;
 }
-.section3 {
-  background: #000000;
-  height: 71.5rem;
-}
-.section3 h6 {
-  padding-top: 12rem;
-  color: #8491A0;
-  font-size: 1.6rem;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: 150%;
-  text-transform: uppercase;
-}
-.section3 h3 {
-  width: 69rem;
-  padding-top: 0.8rem;
-  color: #fff;
-  font-size: 5.5rem;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: normal;
-}
-.section3 .col h1 {
-  padding-top: 4rem;
-  color: #8491A0;
-  font-size: 11.7rem;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: normal;
-}
-.section3 .col h5 {
-  font-size: 24px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: 150%;
-  color: #fff;
-}
-.section3 .col h5 .span-gren {
-  color: #3CC74E;
-}
-.section3 .col h5 .span-bl {
-  color: #609BFF;
-}
-.section3 .col h5 .span-pink {
-  color: #E95D90;
-}
-.section3 .col p {
-  padding-top: 2.2rem;
-  color: #8491A0;
-  font-size: 16px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section4 {
+.section2 .boxes {
   display: flex;
-  justify-content: space-between;
-  background-color: #FFF3E4;
-}
-.section4 .image {
-  width: 72rem;
-  height: 60rem;
-}
-.section4 .image img {
-  width: 72rem;
-  height: 60rem;
-}
-.section4 .info {
-  padding-top: 12rem;
-  padding-left: 7.2rem;
-}
-.section4 .info h1 {
-  color: #181823;
-  font-size: 55px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: normal;
-  width: 52.9rem;
-}
-.section4 .info p {
-  width: 57.6rem;
-  padding-top: 2.4rem;
-  color: #5B6876;
-  font-size: 18px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section4 .info a {
-  display: block;
-  width: 11.6rem;
-  padding-top: 12.4rem;
-  color: #181823;
-  font-size: 16px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-  text-decoration: none;
-  border-bottom: 1px solid #181823;
-}
-.section5 {
-  height: 66.4rem;
-  background-color: #000000;
-}
-.section5 .container-my {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-.section5 .container-my .skillset {
-  margin-top: 12rem;
-  width: 41.6rem;
-  margin-right: 2.4rem;
+.section2 .boxes .row {
+  width: 155px;
+  /* Или другой процент, в зависимости от вашего дизайна */
+  margin-bottom: 20px;
 }
-.section5 .container-my .skillset h1 {
-  color: #fff;
-  font-size: 55px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: normal;
-}
-.section5 .container-my .skillset p {
-  margin-top: 2.4rem;
-  color: #8491A0;
-  font-size: 18px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section5 .container-my .info {
-  padding-top: 12rem;
-}
-.section5 .container-my .info .col {
-  width: 41.6rem;
-  height: 17.6rem;
-  margin-right: 2.4rem;
-  margin-bottom: 4.8rem;
-}
-.section5 .container-my .info .col .card {
-  background-color: #000000;
-}
-.section5 .container-my .info .col .card img {
-  width: 3.2rem;
-  height: 3.2rem;
-}
-.section5 .container-my .info .col .card-body {
+.section2 .boxes .row .card {
   padding: 0;
+  border: none;
+  background: transparent;
+  width: 155px;
+  /* Или другой процент, в зависимости от вашего дизайна */
+  margin-bottom: 60px;
 }
-.section5 .container-my .info .col .card-body h5 {
+.section2 .boxes .row .card img {
+  object-fit: cover;
+}
+.section2 .boxes .row .card p {
   color: #fff;
-  font-size: 24px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: 150%;
 }
-.section5 .container-my .info .col .card-body p {
-  color: #8491A0;
-  font-size: 16px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section6 {
-  overflow-x: scroll;
-  background-color: #000000;
-}
-.section6 .slider {
+.section2 .boxes .row .card .container-price {
   display: flex;
 }
-.section6 .slider .centered-image {
-  border: 1px solid #181823;
-  display: block;
-  padding: 5.5rem 12.7rem;
-}
-.section7 {
-  background-color: #000000;
-}
-.section7 .container-my {
-  display: flex;
-}
-.section7 .container-my .col1 {
-  padding-top: 12rem;
-}
-.section7 .container-my .col1 .info h4 {
-  color: #8491A0;
-  font-size: 16px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: 150%;
-  text-transform: uppercase;
-}
-.section7 .container-my .col1 .info h1 {
-  width: 57.2rem;
+.section2 .boxes .row .card .container-price h1 {
   color: #fff;
-  font-size: 55px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: normal;
+  font-size: 20px;
 }
-.section7 .container-my .col1 .images {
-  margin-top: 12rem;
+.section2 .boxes .row .card .container-price .shop-button {
+  margin-left: 25px;
+  background: #09b700;
+  width: 39px;
+  height: 39px;
+  overflow: hidden;
 }
-.section7 .container-my .col1 .images .body {
-  margin-right: 2.4rem;
-}
-.section7 .container-my .col1 .images .body img {
-  width: 63.6rem;
-  height: 62rem;
-}
-.section7 .container-my .col1 .images .body .info {
-  background-color: #181823;
-  width: auto;
-  height: auto;
-  padding: 4rem 3.2rem;
-  margin-bottom: 2.4rem;
-}
-.section7 .container-my .col1 .images .body .info h3 {
-  color: #fff;
-  font-size: 24px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: 150%;
-}
-.section7 .container-my .col1 .images .body .info p {
-  margin-top: 1.3rem;
-  color: #8491A0;
-  font-size: 18px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section7 .container-my .col2 {
-  padding-top: 12rem;
-}
-.section7 .container-my .col2 .info h4 {
-  color: #8491A0;
-  font-size: 16px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: 150%;
-  text-transform: uppercase;
-}
-.section7 .container-my .col2 .info h1 {
-  color: #fff;
-  font-size: 55px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: normal;
-}
-.section7 .container-my .col2 .images {
-  margin-top: 12rem;
-}
-.section7 .container-my .col2 .images .body {
-  margin-right: 7.2rem;
-}
-.section7 .container-my .col2 .images .body img {
-  width: 63.6rem;
-  height: 62rem;
-}
-.section7 .container-my .col2 .images .body .info {
-  background-color: #181823;
-  width: auto;
-  height: auto;
-  padding: 4rem 3.2rem;
-  margin-bottom: 2.4rem;
-}
-.section7 .container-my .col2 .images .body .info h3 {
-  color: #fff;
-  font-size: 24px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: 150%;
-}
-.section7 .container-my .col2 .images .body .info p {
-  margin-top: 1.3rem;
-  color: #8491A0;
-  font-size: 18px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section8 {
-  background-color: #FBE4FF;
-  display: flex;
-  justify-content: space-between;
-}
-.section8 .image {
-  width: 72rem;
-  height: 60rem;
-}
-.section8 .image img {
-  width: 72rem;
-  height: 60rem;
-}
-.section8 .info {
-  padding-top: 12rem;
-  padding-left: 7.2rem;
-}
-.section8 .info h1 {
-  color: #181823;
-  font-size: 55px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: normal;
-}
-.section8 .info p {
-  width: 57.6rem;
-  padding-top: 2.4rem;
-  color: #5B6876;
-  font-size: 18px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section8 .info a {
-  display: block;
-  width: 13rem;
-  padding-top: 12.4rem;
-  color: #181823;
-  font-size: 16px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-  text-decoration: none;
-  border-bottom: 1px solid #181823;
-}
-.section9 {
-  display: flex;
-  padding: 12rem;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #000000;
-}
-.section9 h1 {
-  color: #fff;
-  font-size: 55px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: normal;
-}
-.section9 p {
-  margin-top: 2.4rem;
-  color: #8491A0;
-  font-size: 18px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section9 a {
-  margin-top: 4rem;
-  display: block;
-  width: auto;
-  color: #fff;
-  font-size: 16px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section9 .image {
-  margin-top: 12rem;
-  width: 107.6rem;
-  height: 67.6rem;
-}
-.section9 .image img {
+.section2 .boxes .row .card .container-price .shop-button img {
+  padding: 8px;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-.section10 {
-  background-color: #000000;
-  height: 272.2rem;
-}
-.section10 .columns {
+.section2 .show-more-btn {
   display: flex;
-  justify-content: space-between;
-  padding-top: 12rem;
+  align-items: center;
+  justify-content: center;
 }
-.section10 .columns .info {
-  width: 58.8rem;
-}
-.section10 .columns .info h1 {
-  color: #fff;
-  font-size: 55px;
-  font-family: 'Sen-bold', sans-serif;
+.section2 .show-more-btn button {
+  width: 214px;
+  height: 42px;
+  border: 1px solid #09b700;
+  background-color: #1c1c1c;
+  font-size: 13px;
+  color: #09b700;
   font-weight: 700;
-  font-display: swap;
-  line-height: normal;
-}
-.section10 .columns .info p {
-  margin-top: 2.4rem;
-  color: #8491A0;
-  font-size: 18px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section10 .columns .info a {
-  margin-top: 4rem;
-  color: #fff;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-display: swap;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 150%;
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
-}
-.section10 .columns .images {
-  width: 63.6rem;
-  height: 36rem;
-}
-.section10 .columns .images .body {
-  width: 63.6rem;
-  border: 1px solid #5B6876;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 12rem;
-}
-.section10 .columns .images .body h5 {
-  padding-top: 6.4rem;
-  padding-left: 6.4rem;
-  color: #fff;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  font-size: 24px;
-  font-style: normal;
-  line-height: 150%;
-}
-.section10 .columns .images .body .p1 {
-  margin-top: 6.4rem;
-  margin-bottom: 0;
-  padding-left: 6.4rem;
-  color: #5B6876;
-  font-size: 18px;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-  line-height: 150%;
-}
-.section10 .columns .images .body .p2 {
-  margin-top: 0.4rem;
-  padding-left: 6.4rem;
-  color: #5B6876;
-  font-size: 18px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-  line-height: 150%;
-}
-.section11 {
-  background-color: #000000;
-}
-.section11 .info h1 {
-  padding-top: 12rem;
-  color: #fff;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  font-size: 55px;
-  font-style: normal;
-  line-height: normal;
-}
-.section11 .info p {
-  margin-top: 2.4rem;
-  color: #8491A0;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-display: swap;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 150%;
-}
-.section11 .images {
-  padding-bottom: 12rem;
-}
-.section11 .images .btnn button {
-  color: #fff;
-  font-size: 18px;
-  font-style: normal;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: 150%;
+  line-height: 22px;
+  /* 169.231% */
+  letter-spacing: 1.3px;
   text-transform: uppercase;
 }
-.section11 .images .btnn .button {
-  display: inline-block;
-  padding: 12px 16px;
-  cursor: pointer;
-  margin-right: 10px;
-  transition: background-color 0.7s ease;
-  border: 1px solid #5221E6;
-  background-color: #000000;
+.section3 {
+  margin-top: 100px;
+  white-space: nowrap;
+  margin-bottom: 85px;
 }
-.section11 .images .btnn .active {
-  border: 1px solid #5221E6;
-  background-color: #5221E6;
-}
-.section11 .images .photos {
-  margin-top: 20px;
-  width: 30.6rem;
-  height: 42rem;
+.section3 .head {
   display: flex;
-  transition: transform 0.7s ease;
+  justify-content: space-between;
 }
-.section11 .images .photo {
-  margin-right: 2.4rem;
-  flex: 1;
-  display: none;
-  transition: opacity 0.7s ease;
+.section3 .head .text h1 {
+  color: #fff;
 }
-.section11 .images .photo.active {
-  opacity: 1;
+.section3 .head .arrows {
+  margin-bottom: 30px;
+  display: flex;
 }
-.section12 {
-  background-color: #000000;
-  height: 73.1rem;
+.section3 .head .arrows .arrow-left {
+  margin-right: 20px;
+}
+.section3 .head .arrows .arrow-left:hover img {
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  /* Инвертировать цвет изображения при наведении */
+}
+.section3 .head .arrows .arrow-left:active img {
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  /* Инвертировать цвет изображения при нажатии */
+}
+.section3 .head .arrows .arrow-right {
+  margin-right: 20px;
+}
+.section3 .head .arrows .arrow-right:hover img {
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  /* Инвертировать цвет изображения при наведении */
+}
+.section3 .head .arrows .arrow-right:active img {
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  /* Инвертировать цвет изображения при нажатии */
+}
+.section3 .head .arrows button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+.section3 .head .arrows button img {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  /* Добавьте стили для изображений-кнопок по вашему усмотрению */
+}
+.section3 .carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 315px;
+  /* Общая ширина карусели (130px * 5) */
+}
+.section3 .carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.section3 img {
+  width: 130px;
+  height: 180px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.section3 .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+}
+.section3 .arrow-left {
+  left: 0;
+}
+.section3 .arrow-right {
+  right: 0;
+}
+.footer {
+  background: #121212;
+}
+.footer .icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section12 .forms {
+.footer .icon img {
+  margin: 20px;
+  height: 150px;
+  width: 150px;
+}
+.footer .icon .sec {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
-.section12 .forms .info h1 {
-  font-size: 55px;
-  font-style: normal;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: normal;
-  color: #fff;
+.footer .icon .sec .l1 {
+  text-align: center;
 }
-.section12 .forms .info p {
-  color: #8491A0;
-  font-size: 18px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section12 .forms .form {
-  margin-left: 2.4rem;
-}
-.section12 .forms .form-label {
-  color: #fff;
-  font-size: 16px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
-}
-.section12 .forms .form-control {
-  width: 52.6rem;
-  height: 5rem;
-  margin-bottom: 4rem;
-  background-color: #181823;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-.section12 .forms .form .form-control:focus {
-  outline: 2px solid #5221E6;
-  /* Задайте желаемый стиль обводки при фокусировке */
-}
-.section12 .forms .form .form-control:last-child {
-  width: 52.6rem;
-  height: 10rem;
-  /* Задайте другую ширину для последнего поля form-control */
-  margin-bottom: 4rem;
-}
-.section12 .forms .form .btn {
-  padding: 0;
-}
-.section12 .forms .form .btn button {
-  background: #5221E6;
-  border: #5221E6;
-  height: 7.5rem;
-  width: 52.6rem;
-  font-size: 18px;
-  font-style: normal;
-  font-family: 'Sen-bold', sans-serif;
-  font-weight: 700;
-  font-display: swap;
-  line-height: 150%;
-  text-transform: uppercase;
-  color: #fff;
-}
-.footer {
-  height: 42.2rem;
-  background-color: #181823;
-}
-.footer .icon {
-  padding-top: 8rem;
-}
-.footer .links {
-  position: relative;
-  margin-top: -19.8rem;
-}
-.footer .links button {
-  background-color: transparent;
-  border: none;
-  margin-right: 1.6rem;
-  width: 2.4rem;
-  height: 2.4rem;
-  padding: 0;
-}
-.footer .links button img {
-  height: auto;
-  width: auto;
-}
-.footer .sec {
-  display: inline-block;
-  margin-left: 63.9rem;
-  position: relative;
-}
-.footer .sec a {
-  color: #fff;
-  font-size: 16px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  line-height: 150%;
+.footer .icon .sec .l1 a {
+  display: block;
+  /* Превращает каждую ссылку в блочный элемент, чтобы разместить их в столбец */
+  margin: 10px 0;
   text-decoration: none;
-  margin-bottom: 4rem;
-}
-.footer .sec .l1 {
-  display: inline-flex;
-  flex-direction: column;
-  margin-right: 18rem;
-}
-.footer .sec .l2 {
-  display: inline-flex;
-  flex-direction: column;
-}
-.footer .giv {
-  margin-top: 20rem;
-  width: 9rem;
-}
-.footer .giv h5 {
-  color: #fff;
-  font-size: 14px;
-  font-family: 'Sen-reg', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  border-bottom: 1px solid #fff;
-}
-@media (max-width: 768px) {
-  .container-my {
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .section1 {
-    background: #000000;
-  }
-  .section1 .dropdown button {
-    display: none;
-  }
-  .section2 {
-    background: #000000;
-    height: 81.4rem;
-  }
-  .section2 .robin {
-    padding: 8rem 4rem 0 0;
-    height: 81.4rem;
-  }
-  .section2 .robin .image {
-    position: relative;
-    width: 38.4rem;
-    background-image: url("/robin/img/s2/people768.png");
-    /* Укажите путь к вашему изображению */
-    background-size: auto;
-    /* Отображение изображения в исходном разрешении */
-    background-repeat: no-repeat;
-    /* Отключение повторения фонового изображения */
-    /* Дополнительные стили для блока */
-  }
-  .section2 .robin .image img {
-    display: none;
-  }
-  .section2 .robin .image .txt {
-    position: relative;
-    top: 6rem;
-    left: 31rem;
-    z-index: 2;
-  }
-  .section2 .robin .image .txt h1 {
-    width: 40.8rem;
-    color: #fff;
-    font-size: 5.6rem;
-    font-family: 'Sen-bold', sans-serif;
-    font-weight: 700;
-    font-display: swap;
-    line-height: normal;
-  }
-  .section2 .robin .image .txt h1 span {
-    color: #FFFFFF80;
-  }
-  .section2 .robin .image .txt p {
-    width: 40.8rem;
-    margin-top: 3.2rem;
-    font-size: 1.8rem;
-    font-family: 'Sen-reg', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    line-height: 150%;
-    color: #fff;
-  }
-  .section3 {
-    height: 75.7rem;
-  }
-  .section3 .container-my h6 {
-    padding-top: 8rem;
-  }
-  .section3 .container-my h3 {
-    width: 68.8rem;
-  }
-  .section3 .container-my .col {
-    padding-bottom: 10.4rem;
-  }
-  .section3 .container-my .col h5 {
-    width: 19.7rem;
-  }
-  .section3 .container-my .col p {
-    width: 19.7rem;
-  }
-  .section4 {
-    height: 60rem;
-  }
-  .section4 .info {
-    padding: 8rem 4rem 0 4rem;
-  }
-  .section4 .info h1 {
-    width: 30.4rem;
-  }
-  .section4 .info p {
-    width: 30.4rem;
-  }
-  .section4 .info a {
-    padding-top: 6.7rem;
-  }
-  .section4 .image {
-    background-image: url(/robin/img/s4/i-ad.png);
-    background-size: auto;
-    /* Отображение изображения в исходном разрешении */
-    background-repeat: no-repeat;
-  }
-  .section4 .image img {
-    display: none;
-  }
-  .section5 {
-    height: 85.1rem;
-  }
-  .section5 .container-my {
-    display: block;
-  }
-  .section5 .container-my .skillset {
-    margin-top: 0;
-    padding-top: 8rem;
-  }
-  .section5 .container-my .skillset h1 {
-    display: block;
-  }
-  .section5 .container-my .skillset p {
-    display: block;
-    width: 68.8rem;
-  }
-  .section5 .container-my .info {
-    padding-top: 4.8rem;
-  }
-  .section5 .container-my .info .card h5 {
-    padding-top: 2.4rem;
-  }
-  .section5 .container-my .info .card p {
-    padding-top: 1.2rem;
-  }
-  .section6 {
-    overflow: hidden;
-    height: 42rem;
-  }
-  .section6 .slider-i .slider {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-  }
-  .section6 .slider-i .slider .si {
-    border: 1px solid #181823;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .section6 .slider-i .slider .centered-image {
-    object-fit: contain;
-    border: none;
-  }
-  .section7 .container-my {
-    display: block;
-  }
-  .section7 .container-my .col1 .info h1 {
-    width: 68.8rem;
-  }
-  .section7 .container-my .col1 .images {
-    display: flex;
-    flex-direction: column;
-  }
-  .section7 .container-my .col1 .images .body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-  }
-  .section7 .container-my .col1 .images .body img {
-    width: 68.8rem;
-    height: auto;
-  }
-  .section7 .container-my .col1 .images .body .info {
-    width: 68.8rem;
-  }
-  .section7 .container-my .col2 {
-    padding: 0;
-  }
-  .section7 .container-my .col2 .images {
-    margin-top: 0;
-  }
-  .section7 .container-my .col2 .images .body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-  }
-  .section7 .container-my .col2 .images .body img {
-    width: 68.8rem;
-    height: auto;
-  }
-  .section7 .container-my .col2 .images .body .info {
-    width: 68.8rem;
-  }
-  .section8 .image {
-    width: 38.4rem;
-    height: auto;
-    background-image: url(/robin/img/s8/p-a.png);
-  }
-  .section8 .image img {
-    display: none;
-  }
-  .section8 .info {
-    width: 38.4rem;
-    padding-top: 8rem;
-    padding-left: 4rem;
-  }
-  .section8 .info p {
-    width: 30.4rem;
-  }
-  .section9 {
-    padding: 0;
-    padding-top: 8rem;
-  }
-  .section9 .container-my .image {
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-  }
-  .section9 .container-my .image img {
-    width: 68.8rem;
-    height: 48rem;
-  }
-  .section10 {
-    height: 268.5rem;
-  }
-  .section10 .columns {
-    padding-top: 8rem;
-  }
-  .section10 .info h1 {
-    width: 34.6rem;
-  }
-  .section10 .info p {
-    width: 33.2rem;
-  }
-  .section10 .info .se {
-    margin-top: 4rem;
-  }
-  .section10 .images .cards {
-    width: 33.2rem;
-  }
-  .section10 .images .cards .image .i1 {
-    width: 33.2rem;
-    height: 36rem;
-    background-image: url(/robin/img/s10/1a.png);
-  }
-  .section10 .images .cards .image .i1 img {
-    display: none;
-  }
-  .section10 .images .cards .image .i2 {
-    width: 33.2rem;
-    height: 36rem;
-    background-image: url(/robin/img/s10/2a.png);
-  }
-  .section10 .images .cards .image .i2 img {
-    display: none;
-  }
-  .section10 .images .cards .image .i3 {
-    width: 33.2rem;
-    height: 36rem;
-    background-image: url(/robin/img/s10/3a.png);
-  }
-  .section10 .images .cards .image .i3 img {
-    display: none;
-  }
-  .section10 .images .cards .body {
-    width: 33.3rem;
-    padding: 3.2rem;
-    margin-bottom: 6.4rem;
-  }
-  .section10 .images .cards .body h5 {
-    padding: 0;
-    width: 26.9rem;
-  }
-  .section10 .images .cards .body .p1 {
-    margin-top: 6.4rem;
-    padding: 0;
-  }
-  .section10 .images .cards .body .p2 {
-    padding: 0;
-  }
-  .section11 {
-    height: 132.3rem;
-  }
-  .section11 .images .btnn {
-    margin-top: 6.4rem;
-    margin-bottom: 4rem;
-  }
-  .section11 .images .photos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 33.2rem;
-    height: 42rem;
-  }
-  .section11 .images .photos img {
-    margin-bottom: 2.4rem;
-    width: 33.2rem;
-    height: 42rem;
-  }
-  .section12 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .section12 .forms .form {
-    width: 33.2rem;
-  }
-  .section12 .forms .form .form-control {
-    width: 33.2rem;
-  }
-  .section12 .forms .form .btn button {
-    width: 33.2rem;
-  }
-  .section12 .forms .info {
-    width: 33.2rem;
-  }
-  .footer {
-    height: 42.2rem;
-  }
-  .footer .sec {
-    display: flex;
-    margin-left: 33.1rem;
-  }
-  .footer .sec .l1 {
-    margin-right: 13.3rem;
-  }
-  .footer .giv {
-    margin-top: 14.2rem;
-  }
-}
-@media (max-width: 360px) {
-  .container-my {
-    max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .section1 {
-    height: 7.2rem;
-  }
-  .section1 .container-my .dropdown .btn {
-    display: block;
-  }
-  .section1 .container-my .dropdown .choise {
-    display: none;
-  }
-  .section2 {
-    height: 65.2rem;
-  }
-  .section2 .robin {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .section2 .robin .image {
-    background-image: url(/robin/img/s2/ap.png);
-    background-size: auto;
-    /* Отображение изображения в исходном разрешении */
-    background-repeat: no-repeat;
-  }
-  .section2 .robin .image .txt {
-    left: 3rem;
-    top: 34rem;
-    width: 32rem;
-  }
-  .section2 .robin .image .txt h1 {
-    width: 32rem;
-    font-size: 32px;
-    font-style: normal;
-    font-family: 'Sen-bold', sans-serif;
-    font-weight: 700;
-    font-display: swap;
-    line-height: normal;
-  }
-  .section2 .robin .image .txt p {
-    width: 32rem;
-  }
-  .section3 {
-    height: 119.2rem;
-  }
-  .section3 .container-my h6 {
-    padding-top: 4.8rem;
-  }
-  .section3 .container-my h3 {
-    width: 32rem;
-    font-size: 32px;
-    margin-bottom: 0;
-  }
-  .section3 .container-my .col {
-    padding-bottom: 0;
-  }
-  .section3 .container-my .col h1 {
-    padding-top: 4rem;
-  }
-  .section3 .container-my .col h5 {
-    width: 320px;
-  }
-  .section3 .container-my .col p {
-    margin-bottom: 0;
-    padding-top: 1.6rem;
-    width: 320px;
-  }
-  .section4 {
-    height: 90rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .section4 .info {
-    padding: 4rem 2rem 0;
-  }
-  .section4 .info h1 {
-    width: 32rem;
-    font-size: 32px;
-  }
-  .section4 .info p {
-    margin: 0;
-  }
-  .section4 .info a {
-    padding-top: 9rem;
-  }
-  .section4 .image {
-    margin-top: 5rem;
-    background-image: url(/robin/img/s4/p-ad.png);
-    background-size: auto;
-    /* Отображение изображения в исходном разрешении */
-    background-repeat: no-repeat;
-  }
-  .section4 .image img {
-    display: none;
-  }
-  .section5 {
-    height: 134.8rem;
-  }
-  .section5 .container-my .skillset h1 {
-    font-size: 32px;
-  }
-  .section5 .container-my .skillset p {
-    width: 32rem;
-    margin-top: 1.6rem;
-    margin-bottom: 0;
-  }
-  .section5 .container-my .info {
-    height: 134.8rem;
-  }
-  .section5 .container-my .info .row {
-    display: flex;
-    flex-direction: column;
-  }
-  .section6 {
-    overflow: hidden;
-    height: 42rem;
-  }
-  .section6 .slider-i .slider {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-  }
-  .section6 .slider-i .slider .si {
-    width: 18rem;
-    border: 1px solid #181823;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .section6 .slider-i .slider .centered-image {
-    object-fit: contain;
-    border: none;
-  }
-  .section6 .slider-i .slider .centered-image img {
-    padding: 0;
-  }
-  .section7 .container-my .col1 .info h1 {
-    width: 32rem;
-    font-size: 32px;
-    font-style: normal;
-  }
-  .section7 .container-my .col1 .images {
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .section7 .container-my .col1 .images .body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-  }
-  .section7 .container-my .col1 .images .body img {
-    width: 32rem;
-    height: auto;
-  }
-  .section7 .container-my .col1 .images .body .info {
-    width: 32rem;
-  }
-  .section7 .container-my .col2 {
-    padding: 0;
-  }
-  .section7 .container-my .col2 .images {
-    margin-top: 0;
-  }
-  .section7 .container-my .col2 .images .body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-  }
-  .section7 .container-my .col2 .images .body img {
-    width: 32rem;
-    height: auto;
-  }
-  .section7 .container-my .col2 .images .body .info {
-    width: 32rem;
-  }
-  .section8 {
-    height: 90rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .section8 .info {
-    padding: 4rem 2rem 0;
-  }
-  .section8 .info h1 {
-    width: 32rem;
-    font-size: 32px;
-  }
-  .section8 .info p {
-    margin: 0;
-  }
-  .section8 .info a {
-    padding-top: 9rem;
-  }
-  .section8 .image {
-    height: 45rem;
-    margin-top: 5rem;
-    background-image: url(/robin/img/s8/m-ad.png);
-    background-size: auto;
-    /* Отображение изображения в исходном разрешении */
-    background-repeat: no-repeat;
-  }
-  .section8 .image img {
-    display: none;
-  }
-  .section9 {
-    height: 97.4rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .section9 .image {
-    position: relative;
-    top: 6.4rem;
-    height: 51.6rem;
-    background-image: url(/robin/img/s9/m-ad1.png);
-    background-size: auto;
-    /* Отображение изображения в исходном разрешении */
-    background-repeat: no-repeat;
-  }
-  .section9 .image img {
-    display: none;
-  }
-  .section10 {
-    height: 289.6rem;
-    display: block;
-  }
-  .section10 .container-my .columns {
-    display: flex;
-    flex-direction: column;
-  }
-  .section10 .container-my .columns .info h1 {
-    width: 32rem;
-    font-size: 32px;
-  }
-  .section10 .container-my .columns .info p {
-    width: 32rem;
-  }
-  .section10 .container-my .columns .images {
-    margin-top: 6.4rem;
-    width: 33.2rem;
-  }
-  .section10 .container-my .columns .images .cards {
-    position: relative;
-    right: 5px;
-  }
-  .section11 {
-    padding-top: 26.6rem;
-    height: 232.8rem;
-  }
-  .section11 .container-my .info h1 {
-    padding: 0;
-    width: 20.3rem;
-    font-size: 32px;
-  }
-  .section11 .container-my .images .btnn {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2.4rem;
-    row-gap: 2.4rem;
-    justify-items: center;
-    align-items: center;
-    margin: 0;
-  }
-  .section11 .container-my .images .btnn .button {
-    margin: 0;
-    width: 14.8rem;
-  }
-  .section11 .container-my .photos {
-    display: flex;
-    flex-direction: column;
-    width: 32rem;
-  }
-  .section11 .container-my .photos img {
-    width: 32.2rem;
-    height: 42rem;
-  }
-  .section12 .forms {
-    display: flex;
-    flex-direction: column;
-  }
-  .section12 .forms .info {
-    padding-left: 2rem;
-  }
-  .section12 .forms .info h1 {
-    width: 32rem;
-    font-size: 32px;
-  }
-  .section12 .forms .info p {
-    width: 32rem;
-  }
-  .section12 .forms .form .form-control {
-    width: 32rem;
-  }
-  .section12 .forms .form .btn button {
-    width: 32rem;
-  }
-  .footer {
-    height: 67.2rem;
-  }
-  .footer .icon .sec {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    right: 33rem;
-    top: 10rem;
-  }
-  .footer .icon .sec .l1 a {
-    margin: 1rem;
-    padding: 0;
-  }
-  .footer .icon .sec .l2 a {
-    margin: 1rem;
-    padding: 0;
-  }
-  .footer .links {
-    margin-top: -29.8rem;
-  }
-  .footer .giv h5 {
-    margin-top: 44rem;
-  }
+  color: white;
 }
