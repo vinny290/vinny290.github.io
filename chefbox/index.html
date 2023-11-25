@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/chefbox/css/bootstrap.css" />
+    <link rel="stylesheet" href="/chefbox/css/style.css" />
+    <title>Shef-Бокс</title>
+  </head>
+  <body>
+    <div class="container-mobile">
+      <div class="header">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="/chefbox/img/s1/chef_logo.png" alt=""
+            /></a>
+          </div>
+
+          <div class="menu">
+            <a href="#" id="menuBtn"
+              ><img src="/chefbox/img/s1/Vector.svg" alt=""
+            /></a>
+          </div>
+
+          <div class="profile">
+            <a href="profile.html"
+              ><img src="/chefbox/img/s1/profile.svg" alt=""
+            /></a>
+          </div>
+          <div class="shop">
+            <a href="cart.html"
+              ><img src="/chefbox/img/s1/shop.svg" alt=""
+            /></a>
+            <span id="cart-count">0</span>
+          </div>
+        </div>
+        <div class="text-header">
+          <h1>
+            Chef-Бокс – уникальный опыт приготовления блюд в домашних условиях!
+          </h1>
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="toggleModal()">&times;</span>
+          <h2>Меню</h2>
+          <ul>
+            <li><a href="hot.html">Горячие блюда</a></li>
+            <li><a href="soup.html">Супы</a></li>
+            <li><a href="salat.html">Салаты</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section3">
+        <div class="head">
+          <div class="text">
+            <h1>Меню</h1>
+          </div>
+          <div class="arrows">
+            <button class="arrow-left">
+              <img src="/chefbox/img/s3/arrow-left.svg" alt="" />
+            </button>
+            <button class="arrow-right">
+              <img src="/chefbox/img/s3/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel">
+            <a href="hot.html"
+              ><img src="/chefbox/img/s3/hot.png" alt="Image 2"
+            /></a>
+            <a href="soup.html"
+              ><img src="/chefbox/img/s3/soup.png" alt="Image 3"
+            /></a>
+            <a href="salat.html"
+              ><img src="/chefbox/img/s3/salat.png" alt="Image 5"
+            /></a>
+            <a href="baking.html"
+              ><img src="/chefbox/img/s3/baking.png" alt="Image 5"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section2">
+        <div class="text">
+          <h1>Популярные Chef-Боксы</h1>
+        </div>
+        <div class="boxes">
+          <div class="row1">
+            <div class="card" data-item="Английский завтрак" data-price="360">
+              <img src="/chefbox/img/popular/1.jpeg" alt="" />
+              <p>Английский завтрак</p>
+              <p class="weight">270 г</p>
+              <div class="container-price">
+                <h1>360 ₽</h1>
+                <div class="shop-button" onclick="addToCart(this)">
+                  <a
+                    href="#"
+                    onclick="openOrderModal('Английский завтрак', 360)"
+                  >
+                    <img src="/chefbox/img/s2/shop2.svg" alt="" />
+                  </a>
+                  <div class="notification"></div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              data-item="Борщ с говядиной, со сметаной и хлебом"
+              data-price="360"
+            >
+              <img src="/chefbox/img/popular/3.jpeg" alt="" />
+              <p>Борщ с говядиной, со сметаной и хлебом</p>
+              <p class="weight">290 г</p>
+              <div class="container-price">
+                <h1>290 ₽</h1>
+                <div class="shop-button" onclick="addToCart(this)">
+                  <a
+                    href="#"
+                    onclick="openOrderModal('Борщ с говядиной, со сметаной и хлебом', 290)"
+                  >
+                    <img src="/chefbox/img/s2/shop2.svg" alt="" />
+                  </a>
+                  <div class="notification"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="/chefbox/img/popular/none.png" alt="" />
+              <p>Описание</p>
+              <div class="container-price">
+                <h1>Цена ₽</h1>
+                <div class="shop-button">
+                  <a href="#">
+                    <img src="/chefbox/img/s2/shop2.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row2">
+            <div
+              class="card"
+              data-item="Стопка домашних блинов"
+              data-price="360"
+            >
+              <img src="/chefbox/img/popular/2.jpeg" alt="" />
+              <p>Стопка домашних блинов</p>
+              <p class="weight">450 г</p>
+              <div class="container-price">
+                <h1>360 ₽</h1>
+                <div class="shop-button" onclick="addToCart(this)">
+                  <a
+                    href="#"
+                    onclick="openOrderModal('Стопка домашних блинов', 360)"
+                  >
+                    <img src="/chefbox/img/s2/shop2.svg" alt="" />
+                  </a>
+                  <div class="notification"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Модальное окно -->
+            <div id="orderModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeOrderModal()">&times;</span>
+                <h2>Форма заказа</h2>
+                <form>
+                  <label for="fullName">ФИО:</label>
+                  <input type="text" id="fullName" required /><br /><br />
+
+                  <label for="fullName">Телефон:</label>
+                  <input type="text" id="fullName" required /><br /><br />
+
+                  <label for="fullName">Адрес:</label>
+                  <input type="text" id="fullName" required /><br /><br />
+
+                  <label for="itemName">Наименование товара:</label>
+                  <input type="text" id="itemName" readonly /><br /><br />
+
+                  <label for="itemPrice">Цена:</label>
+                  <input type="text" id="itemPrice" readonly /><br />
+
+                  <!-- Другие поля формы заказа могут быть добавлены здесь -->
+
+                  <button type="submit">Заказать</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="card" data-item="Паста Карбонара" data-price="310">
+              <img src="/chefbox/img/popular/4.jpeg" alt="" />
+              <p>Паста Карбонара</p>
+              <p class="weight">200 г</p>
+              <div class="container-price">
+                <h1>310 ₽</h1>
+                <div class="shop-button" onclick="addToCart(this)">
+                  <a href="#" onclick="openOrderModal('Паста Карбонара', 310)">
+                    <img src="/chefbox/img/s2/shop2.svg" alt="" />
+                  </a>
+                  <div class="notification"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="/chefbox/img/popular/none.png" alt="" />
+              <p>Описание</p>
+              <div class="container-price">
+                <h1>Цена ₽</h1>
+                <div class="shop-button">
+                  <a href="#">
+                    <img src="/chefbox/img/s2/shop2.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show-more-btn">
+          <button>Показать ещё</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="icon">
+          <img src="/chefbox/img/s1/chef_logo.png" alt="" />
+          <div class="sec">
+            <div class="l1">
+              <a href="#">chefbox@midas.rest</a>
+              <a href="#">+7 (499) 841-67-29</a>
+              <a href="#">Контакты</a>
+              <a href="#">Обратная связь</a>
+            </div>
+          </div>
+        </div>
+        <div class="links"></div>
+      </div>
+    </div>
+    <script src="/chefbox/js/index.js"></script>
+  </body>
+</html>

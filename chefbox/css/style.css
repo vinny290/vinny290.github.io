@@ -1,0 +1,430 @@
+@font-face {
+  font-family: 'Jost-bold';
+  src: url('Jost-Bold.eot');
+  src: url('Jost-Bold.eot?#iefix') format('embedded-opentype'), url('Jost-Bold.woff2') format('woff2'), url('Jost-Bold.woff') format('woff'), url('Jost-Bold.ttf') format('truetype'), url('Jost-Bold.svg#Jost-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jost-reg';
+  src: url('Jost-Regular.eot');
+  src: url('Jost-Regular.eot?#iefix') format('embedded-opentype'), url('Jost-Regular.woff2') format('woff2'), url('Jost-Regular.woff') format('woff'), url('Jost-Regular.ttf') format('truetype'), url('Jost-Regular.svg#Jost-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+html,
+body {
+  overflow-x: hidden;
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-size: 10px;
+  /* Стили для фонового цвета слайдера */
+  /* Стили для ползунка слайдера */
+}
+html ::-webkit-scrollbar,
+body ::-webkit-scrollbar {
+  width: 3px;
+  /* Ширина слайдера */
+  background-color: #121212;
+  /* Фоновый цвет слайдера (фиолетовый) */
+}
+html ::-webkit-scrollbar-thumb,
+body ::-webkit-scrollbar-thumb {
+  border-radius: 5rem;
+  background-color: #09b700;
+}
+.shop-button {
+  position: relative;
+  cursor: pointer;
+}
+.shop-button.active {
+  background-color: red;
+  /* Измените цвет по вашему усмотрению */
+}
+.notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: none;
+}
+.container-mobile {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid white;
+}
+body {
+  background: #1c1c1c;
+}
+.header .navbar .logo img {
+  height: 50px;
+  width: 50px;
+}
+.header .text-header {
+  margin-top: 60px;
+}
+.header .text-header h1 {
+  color: #fff;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.916);
+}
+.modal-content {
+  background: linear-gradient(180deg, #005b4b 0%, #005208 100%);
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.modal-content h2 {
+  position: relative;
+  bottom: 50px;
+  right: 27px;
+  color: white;
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 700;
+  font-display: swap;
+}
+.modal-content ul li {
+  font-size: 20px;
+}
+.modal-content ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.modal-content label {
+  color: white;
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 700;
+  font-display: swap;
+}
+.modal-content button {
+  margin-top: 10px;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 13px;
+  color: white;
+  font-weight: 700;
+  line-height: 22px;
+  /* 169.231% */
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.modal-content input {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: white;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  left: 113px;
+  bottom: 20px;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+.menu {
+  display: inline-block;
+}
+.submenu {
+  display: none;
+  list-style-type: none;
+  padding-left: 20px;
+}
+.menu:hover .submenu {
+  display: block;
+}
+.section3 {
+  margin-top: 60px;
+  white-space: nowrap;
+  margin-bottom: 85px;
+}
+.section3 .head {
+  display: flex;
+  justify-content: space-between;
+}
+.section3 .head .text h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+}
+.section3 .head .arrows {
+  margin-bottom: 30px;
+  display: flex;
+}
+.section3 .head .arrows .arrow-left {
+  margin-right: 20px;
+}
+.section3 .head .arrows .arrow-left:hover img {
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  /* Инвертировать цвет изображения при наведении */
+}
+.section3 .head .arrows .arrow-left:active img {
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  /* Инвертировать цвет изображения при нажатии */
+}
+.section3 .head .arrows .arrow-right {
+  margin-right: 20px;
+}
+.section3 .head .arrows .arrow-right:hover img {
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  /* Инвертировать цвет изображения при наведении */
+}
+.section3 .head .arrows .arrow-right:active img {
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  /* Инвертировать цвет изображения при нажатии */
+}
+.section3 .head .arrows button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+.section3 .head .arrows button img {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  /* Добавьте стили для изображений-кнопок по вашему усмотрению */
+}
+.section3 .carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 315px;
+  /* Общая ширина карусели (130px * 5) */
+}
+.section3 .carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.section3 img {
+  width: 130px;
+  height: 180px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.section3 .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+}
+.section3 .arrow-left {
+  left: 0;
+}
+.section3 .arrow-right {
+  right: 0;
+}
+.section2 {
+  margin-top: 60px;
+}
+.section2 .text {
+  margin-bottom: 20px;
+}
+.section2 .text h1 {
+  font-family: 'Jost-reg', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-size: 25px;
+  color: #fff;
+}
+.section2 .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section2 .boxes .row1 {
+  width: 155px;
+  /* Или другой процент, в зависимости от вашего дизайна */
+  margin-bottom: 20px;
+}
+.section2 .boxes .row1 .card {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px 0 10px;
+  border: 1px solid black;
+  background: transparent;
+  width: 155px;
+  /* Или другой процент, в зависимости от вашего дизайна */
+  height: 240px;
+  margin-bottom: 60px;
+}
+.section2 .boxes .row1 .card img {
+  border-radius: 5px;
+  object-fit: cover;
+}
+.section2 .boxes .row1 .card p {
+  margin-top: 10px;
+  font-size: 10px;
+  color: white;
+  margin-bottom: 0;
+}
+.section2 .boxes .row1 .card p.weight {
+  margin-top: 8px;
+  color: grey;
+}
+.section2 .boxes .row1 .card .container-price {
+  display: flex;
+  margin-top: auto;
+}
+.section2 .boxes .row1 .card .container-price h1 {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+.section2 .boxes .row1 .card .container-price .shop-button {
+  margin-left: 25px;
+  background: #09b700;
+  width: 39px;
+  height: 39px;
+  overflow: hidden;
+}
+.section2 .boxes .row1 .card .container-price .shop-button img {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section2 .boxes .row1 .card .container-price .shop-button:hover img {
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  /* Инвертировать цвет изображения при наведении */
+}
+.section2 .boxes .row2 {
+  width: 155px;
+  /* Или другой процент, в зависимости от вашего дизайна */
+  margin-bottom: 20px;
+}
+.section2 .boxes .row2 .card {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px 0 10px;
+  border: 1px solid black;
+  background: transparent;
+  width: 155px;
+  /* Или другой процент, в зависимости от вашего дизайна */
+  height: 240px;
+  /* Стили для модального окна */
+  margin-bottom: 60px;
+}
+.section2 .boxes .row2 .card img {
+  border-radius: 5px;
+  object-fit: cover;
+}
+.section2 .boxes .row2 .card p {
+  margin-top: 10px;
+  font-size: 10px;
+  color: white;
+  margin-bottom: 0;
+}
+.section2 .boxes .row2 .card p.weight {
+  margin-top: 8px;
+  color: grey;
+}
+.section2 .boxes .row2 .card .container-price {
+  display: flex;
+  margin-top: auto;
+}
+.section2 .boxes .row2 .card .container-price h1 {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+.section2 .boxes .row2 .card .container-price .shop-button {
+  margin-left: 25px;
+  background: #09b700;
+  width: 39px;
+  height: 39px;
+  overflow: hidden;
+}
+.section2 .boxes .row2 .card .container-price .shop-button img {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section2 .boxes .row2 .card .container-price .shop-button:hover img {
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+  /* Инвертировать цвет изображения при наведении */
+}
+.section2 .show-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.section2 .show-more-btn button {
+  width: 214px;
+  height: 42px;
+  border: 1px solid #09b700;
+  background-color: #1c1c1c;
+  font-size: 13px;
+  color: #09b700;
+  font-weight: 700;
+  line-height: 22px;
+  /* 169.231% */
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.footer {
+  background: #121212;
+}
+.footer .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .icon img {
+  margin: 20px;
+  height: 150px;
+  width: 150px;
+}
+.footer .icon .sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.footer .icon .sec .l1 {
+  text-align: center;
+}
+.footer .icon .sec .l1 a {
+  display: block;
+  /* Превращает каждую ссылку в блочный элемент, чтобы разместить их в столбец */
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+}
