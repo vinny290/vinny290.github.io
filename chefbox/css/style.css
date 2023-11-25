@@ -71,10 +71,23 @@ body {
   width: 50px;
 }
 .header .text-header {
-  margin-top: 60px;
+  margin-top: 20px;
 }
-.header .text-header h1 {
-  color: #fff;
+.header .text-header .image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.header .text-header .image .center {
+  width: 300px;
+  font-family: 'Jost-bold', sans-serif;
+  font-weight: 700;
+  font-display: swap;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .modal {
   display: none;
